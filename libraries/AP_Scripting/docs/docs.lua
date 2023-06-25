@@ -1993,6 +1993,14 @@ function vehicle:set_circle_rate(rate_dps) end
 function vehicle:get_circle_radius() end
 
 -- desc
+---@param roll_rate_rs number
+---@param pitch_rate_rs number
+---@param yaw_rate_rs number
+---@param thrust number
+---@return boolean
+function vehicle:set_target_rate_and_thrust(roll_rate_rs, pitch_rate_rs, yaw_rate_rs, thrust) end
+
+-- desc
 ---@param roll_deg number
 ---@param pitch_deg number
 ---@param yaw_deg number
